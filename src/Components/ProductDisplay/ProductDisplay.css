@@ -1,0 +1,174 @@
+.productdisplay {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 17px;
+    gap: 20px;
+    justify-content: center; /* Centering the content horizontally */
+    align-items: center; /* Centering the content vertically */
+}
+
+.productdisplay-left {
+    display: flex;
+    gap: 17px;
+    flex: 1;
+    justify-content: center; /* Centering big image and small images */
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center; /* Centering small images */
+}
+
+.productdisplay-img-list img {
+    height: calc(700px / 4); /* Makes the height proportional to the big image */
+    width: auto;
+    border-radius: 4px;
+}
+
+.productdisplay-main-img {
+    width: 586px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.productdisplay-right {
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content in the right section */
+}
+
+.productdisplay-right h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #3d3d3d;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center; /* Center text */
+}
+
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    color: #1c1c1c;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.productdisplay-right-price-old {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.productdisplay-right-price-new {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    color: #e63946;
+    font-weight: bold;
+}
+
+.productdisplay-right-description {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 0;
+    color: #555;
+}
+
+.productdisplay-right-size {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 20px 0;
+}
+
+.productdisplay-right-size div {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.productdisplay-right-size div:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #d62839;
+}
+
+.productdisplay-right-category {
+    margin: 5px 0;
+    color: #555;
+}
+
+.productdisplay-right-category span {
+    font-weight: bold;
+}
+
+.productdisplay-img-list img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .productdisplay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productdisplay-left {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .productdisplay-main-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .productdisplay-right {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .productdisplay-main-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .productdisplay-right h1 {
+        font-size: 24px;
+    }
+
+    .productdisplay-right-price-new {
+        font-size: 18px;
+    }
+}

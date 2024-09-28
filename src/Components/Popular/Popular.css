@@ -1,0 +1,85 @@
+.popular {
+   
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .popular h1 {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .popular hr {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    width: 80px;
+    height: 3px;
+    background-color: #333;
+    border: none;
+    margin: 0 auto 20px;
+  }
+  
+  .popular-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .item {
+    color: #777;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .item:hover {
+    color: black;
+    transform: translateY(-5px);
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .item .name {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .item .price {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #777;
+  }
+  
+  .item .price .new_price {
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    color: #e74c3c;
+    font-weight: 700;
+  }
+  
+  .item .price .old_price {
+   
+    font-family: "Ubuntu", system-ui;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+  

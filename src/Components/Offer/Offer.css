@@ -1,0 +1,98 @@
+.offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(180deg , #f9a5ff,#e1ffea22 60%);
+  border-radius: 15px;
+  margin: 70px auto;
+  max-width: 90%;
+  flex-wrap: wrap;
+}
+
+.offers-left {
+  max-width: 600px;
+  text-align: left;
+  flex: 1;
+}
+
+.offers-left h1 {
+  font-family: "Ubuntu", system-ui;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #333;
+  margin: 0;
+}
+
+.offers-left p {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px 0;
+}
+
+.offers-left button {
+  font-family: "Ubuntu", system-ui;
+  font-weight: bold;
+  padding: 12px 40px;
+  font-size: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offers-left button:hover {
+  background-color: #c0392b;
+}
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-right img {
+  max-width: 100%;
+  border-radius: 15px;
+  width: auto;
+}
+
+@media (max-width: 1024px) {
+  .offers-left h1 {
+    font-size: 3rem;
+  }
+
+  .offers-left p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .offers-left h1 {
+    font-size: 2rem;
+  }
+
+  .offers-left p {
+    font-size: 1rem;
+  }
+
+  .offers-left button {
+    padding: 10px 20px;
+  }
+
+  .offers-right img {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+}

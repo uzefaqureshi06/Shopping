@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.loginsignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #d582db, #e1ffea22 60%);
+  padding: 20px; /* To handle smaller screen padding */
+}
+
+.loginsignup-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.loginsignup-container h1 {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.loginsignup-fields input {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.loginsignup-fields input:focus {
+  border-color: #e74c3c;
+  outline: none;
+}
+
+button {
+  background-color: #e74c3c;
+  font-family: "Ubuntu", system-ui;
+  font-weight: 500;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2575fc;
+}
+
+.loginsignup-login {
+  margin-top: 15px;
+  color: #333;
+}
+
+.loginsignup-login span {
+  color: #e74c3c;
+  font-family: "Ubuntu", system-ui;
+  font-weight: 500;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.loginsignup-agree {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.loginsignup-agree input[type="checkbox"] {
+  accent-color: #e74c3c;
+}
+
+.loginsignup-agree p {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 500;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .loginsignup-container {
+    padding: 30px;
+    max-width: 350px; 
+  }
+
+  .loginsignup-container h1 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .loginsignup {
+    padding: 10px; }
+
+  .loginsignup-container {
+    padding: 20px;
+    max-width: 90%; 
+  }
+
+  .loginsignup-container h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .loginsignup-container {
+    padding: 15px;
+  }
+
+  .loginsignup-container h1 {
+    font-size: 20px;
+  }
+
+  .loginsignup-fields input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

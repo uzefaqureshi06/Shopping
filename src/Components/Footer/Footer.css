@@ -1,0 +1,117 @@
+.footer {
+  background-color: #ffffff; 
+  color: #333; 
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer_logo img {
+  width: 50px; 
+  margin-right: 10px;
+}
+
+.footer_logo p {
+  font-family: "Ubuntu", system-ui;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 600;
+  list-style: none; 
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  margin: 0 15px;
+  cursor: pointer; 
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #e74c3c;
+}
+
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-icons-container {
+  margin: 0 10px;
+}
+
+.footer-icons-container img {
+  width: 30px; 
+  transition: transform 0.3s ease;
+}
+
+.footer-icons-container img:hover {
+  transform: scale(1.1); 
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer-copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #ffffff; 
+  margin: 10px 0;
+}
+
+
+@media (max-width: 800px) {
+  .footer {
+gap: 20px;
+  }
+
+  .footer-logo{
+gap: 10px;
+align-items: end;
+  }
+
+  .footer-logo img{
+width: 40px;
+  }
+
+  .footer-links li {
+    margin: 0 10px;
+  }
+
+  .footer_logo p {
+    font-size: 25px;
+  }
+
+  .footer-social-icon img{
+    width: 22px;
+  }
+
+  .footer-copyright{
+    font-size: 13px;
+  }
+
+  .footer-links {
+font-size: 14px;
+gap: 10px;
+  }
+}
+
