@@ -1,14 +1,8 @@
-const mongoose = require('mongoose')
-const MONGO_URI = 'mongodb+srv://avezblog:avezblog@cluster0.st4qayt.mongodb.net/?retryWrites=true&w=majority'
+const { createClient } = require('@supabase/supabase-js');
 
-const connectDB = async () => {
-    try {
-        await mongoose.connect(MONGO_URI);
-        console.log('Connected to Database')
-    } catch (error) {
-        console.log('Database error', error);
-    }
-}
+const SUPABASE_URL = 'https://keirkdqjwmihaqrybekb.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtlaXJrZHFqd21paGFxcnliZWtiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU2MzkxNzUsImV4cCI6MjA0MTIxNTE3NX0.-LPQMadPdB4Rn98NP7YWyiS_0b272eFyEKGMQjqemmI';
 
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-module.exports = connectDB;
+module.exports = supabase;
